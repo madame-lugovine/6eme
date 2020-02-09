@@ -1,0 +1,21 @@
+---
+layout: page
+title: Sciences
+subtitle: Toutes les informations sur le cours de Sciences
+paths: Accueil/Sciences
+links: /,/sciences
+---
+
+<div id="full-tags-list">
+<h2>Les sujets</h2>
+<div class="posts-list">
+  {%- for post in site.tags["Sciences"] -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                <div class="entry-date">
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+                </div>
+            </div>
+        {%- endfor -%}
+</div>
+</div>

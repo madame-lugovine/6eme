@@ -1,0 +1,21 @@
+---
+layout: page
+title: Mathématiques
+subtitle: Toutes les informations sur le cours de mathématiques
+paths: Accueil/Mathématiques
+links: /,/mathematiques
+---
+
+<div id="full-tags-list">
+<h2>Les sujets</h2>
+<div class="posts-list">
+  {%- for post in site.tags["Mathématiques"] -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                <div class="entry-date">
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+                </div>
+            </div>
+        {%- endfor -%}
+</div>
+</div>

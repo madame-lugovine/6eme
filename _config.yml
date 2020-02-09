@@ -1,10 +1,11 @@
 # --- General options --- #
 
 # Name of website
-title: Madame Lugovine - 6èmes
+title: Madame Lugovine - 6ème
 
 # Short description of your site
 description: Bievenue sur le site des 6èmes primaires de Madame Lugovine. Vous trouverez sur ce site toutes les ressources utilisées pendant les cours.
+
 
 # --- Navigation bar options --- #
 
@@ -57,7 +58,7 @@ author:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "madame-lugovine.github.io/beautiful-jekyll"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "madame-lugovine.github.io/6eme"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -75,7 +76,7 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/Brussels"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -170,6 +171,3 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189

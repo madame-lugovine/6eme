@@ -4,18 +4,28 @@ layout: base
 
 {% include header.html type="post" %}
 
+{% assign crumbs = page.paths | split: '/' %}
+{% assign links = page.links | split: ',' %}
+{% assign num = crumbs.size  | minus:1 %}
+
+
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <ul class="breadcrumb">
+      {% if num == 0 %}
+        <li>{{ crumbs[0] }}</li>
+      {% else %}
+        {% for i in (0..num) %}
+          {% if forloop.last %}
+            <li>{{ crumbs[i] }}</li>
+          {% else %}
+            <li><a href={{ site.url | append: links[i]}}>{{ crumbs[i] }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      </ul>
       <article role="main" class="blog-post">
-        <a href="/beautiful-jekyll">Accueil</a>
-      {% for crumb in crumbs offset: 1 %}
-        {% if forloop.last %}
-          > {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
-        {% else %}
-          > <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-        {% endif %}
-      {% endfor %}
         {{ content }}
       </article>
 
