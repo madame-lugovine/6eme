@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Sujet de test
-image: /img/religion.jpg
+image: /img/mathematiques.jpg
 paths: Accueil/Mathématiques/Sujet de test
-links: /,/,/
+links: /6eme,/6eme/mathematiques,/
 tags: [Mathématiques, Français, Sciences, Arts, Musique, Éveil religieux]
 ---
 
