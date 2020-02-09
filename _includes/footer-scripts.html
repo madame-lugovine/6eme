@@ -30,3 +30,14 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158051651-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158051651-1');
+</script>
+
