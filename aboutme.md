@@ -1,16 +1,19 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: À propos
+subtitle: Qui suis-je ? 
+paths: Accueil/À propos
+links: /6eme,/6eme
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Je m'appelle Lugovine Louchez et je suis étudiante institutrice primaire en deuxième année à l'ENCBW.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Mon stage avec les sixièmes primaire de l'école Sainte-Lutgarde se déroule :
+- du 10 au 19 février,
+- du 27 avril au 8 mai.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Sur ce site, vous trouverez toutes les informations relatives aux cours que je donne durant cette période. Ces informations incluent :
+- les synthèses des cours,
+- les exercices et leurs corrigés,
+- les devoirs à faire,
+- des exercices supplémentaires en cas de besoin.
